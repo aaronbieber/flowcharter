@@ -1,6 +1,6 @@
 //const data = require('../data/coaching.json')
 import { render, html, Component } from 'htm/preact'
-import Board from './board'
+import Board from './Board'
 
 const App = html`<${Board} />`
 

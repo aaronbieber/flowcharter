@@ -1,5 +1,5 @@
 import { html } from 'htm/preact'
-import Question from './Question'
+import Question from './question'
 import Data from './coaching.json'
 
 const Board = (props) => {
