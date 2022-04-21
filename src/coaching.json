@@ -1,0 +1,83 @@
+{
+  "1": {
+    "question": "Do you believe there is something to discover in your personal or professional life?",
+    "answers": [
+      {
+        "text": "personal",
+        "goto": "2"
+      },
+      {
+        "text": "professional",
+        "goto": "?"
+      },
+      {
+        "text": "both",
+        "goto": "2"
+      }
+    ]
+  },
+
+  "2": {
+    "question": "Are you experiencing pain or trauma?",
+    "answers": [
+      {
+        "text": "yes",
+        "goto": "3"
+      },
+      {
+        "text": "no",
+        "goto": "7"
+      }
+    ]
+  },
+
+  "3": {
+    "question": "Are you seeking a way to resolve past pain, dysfunction, or conflict?",
+    "answers": [
+      {
+        "text": "yes",
+        "goto": "4"
+      },
+      {
+        "text": "no",
+        "goto": "5"
+      }
+    ]
+  },
+
+  "4": {
+    "end": "Consider psychotherapy\n\nThe focus is often on resolving difficulties arising from the past that hamper an individual's emotional functioning in the present, improving overall psychological functioning, and dealing with the present in more emotionally healthy ways. You may find it helpful to know that ICF Members have received training to discern the differences between coaching and therapy and are obliged by our organization’s Code of Ethics to refer prospective or current clients to therapists when appropriate."
+  },
+
+  "5": {
+    "question": "Do you seek action, accountability, and follow-through?",
+    "answers": [
+      {
+        "text": "yes",
+        "goto": "7"
+      },
+      {
+        "text": "no",
+        "goto": "6"
+      }
+    ]
+  },
+
+  "6": {
+    "end": "Consider coaching in the future"
+  },
+
+  "7": {
+    "question": "Would you like to increase self-confidence and enhance relationships, communication skills, and work/life balance?",
+    "answers": [
+      {
+        "text": "yes",
+        "goto": "7"
+      },
+      {
+        "text": "no",
+        "goto": "6"
+      }
+    ]
+  }
+}
