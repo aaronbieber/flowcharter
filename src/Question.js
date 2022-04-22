@@ -1,5 +1,5 @@
 import { html } from 'htm/preact'
-import Button from './button'
+import Button from './Button'
 
 const Question = (props) => {
   var data = props.data

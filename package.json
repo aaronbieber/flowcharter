@@ -25,8 +25,14 @@
     "webpack-cli": "^4.8.0"
   },
   "dependencies": {
+    "commonmark": "^0.30.0",
+    "css-loader": "^6.7.1",
     "htm": "^3.1.0",
+    "interweave": "^13.0.0",
     "preact": "^10.7.1",
-    "pullstate": "^1.24.0"
+    "pullstate": "^1.24.0",
+    "sass": "^1.50.1",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1"
   }
 }
