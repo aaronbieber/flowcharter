@@ -1,32 +1,132 @@
+$mobileThreshold: 600px;
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.question {
-  width: 50%;
-  margin: 0 auto;
-  border: 1px solid gray;
-  border-radius: 5px;
+.answers {
+  text-align: center;
+}
+
+.button-yellow {
+  background-color: rgb(248, 189, 53);
+  transition: opacity 0.1s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.button-white {
+  background-color: white;
+  transition: background-color 0.1s;
+  border: 1px solid silver;
+
+  &:hover {
+    background-color: #ddd;
+  }
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
   padding: 1em;
+  margin-right: 1em;
 
-  p.text {
-    margin: 0 0 1em 0;
+  &.nav-button {
+    margin-top: 30px;
   }
 
-  .answers {
-    text-align: center;
+  &:last-child {
+    margin-right: 0;
   }
 
-  button {
-    background-color: white;
-    border: 1px solid silver;
-    border-radius: 4px;
-    padding: 1em;
-    margin-right: 1em;
-    transition: background-color 0.1s;
+  @media (max-width: $mobileThreshold) {
+    width: 85%;
+    margin-right: 0;
+    margin-bottom: 10px;
 
-    &:hover {
-      background-color: silver;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
+}
+
+button.margin-bottom {
+  margin-bottom: 30px;
+}
+
+#container {
+  text-align: center;
+  position: absolute;
+  margin-top: 10px;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, 0);
+
+  @media (max-width: $mobileThreshold) {
+    width: 90%;
+  }
+
+  .question {
+    text-align: left;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 1em;
+    box-shadow: 0px 10px 30px #ddd;
+
+    @media (max-width: $mobileThreshold) {
+      box-shadow: 0 10px 10px #ddd;
+    }
+
+    h3 {
+      margin: 0;
+    }
+
+    p.text {
+      margin: 0 0 1em 0;
+    }
+
+    .answers {
+      text-align: center;
+    }
+  }
+}
+
+.button-small {
+  background-color: rgb(248, 189, 53);
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  color: rgb(0, 0, 0);
+  display: inline-block;
+  font-family: proxima-nova;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 17px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 17px;
+  padding-left: 29.75px;
+  padding-right: 29.75px;
+  padding-top: 17px;
+  text-align: center;
+  text-decoration-color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  transition-delay: 0s;
+  transition-duration: 0.1s;
+  transition-property: opacity;
+  transition-timing-function: linear;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.button-medium:hover,
+.button-small:hover {
+  opacity: 0.8;
 }

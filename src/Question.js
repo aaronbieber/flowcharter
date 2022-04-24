@@ -8,7 +8,7 @@ const Question = (props) => {
     <div class="question">
       <p class="text">${data.question}</p>
       <div class="answers">
-        ${data.answers.map(a => html`<${Button} text="${a.text}" goto="${a.goto}" />`)}
+        ${data.answers.map(a => html`<${Button} class="button-yellow" text="${a.text}" goto="${a.goto}" />`)}
       </div>
     </div>
   `

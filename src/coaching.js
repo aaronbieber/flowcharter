@@ -1,4 +1,4 @@
-{
+export default {
   "1": {
     "question": "Do you believe there is something to discover in your personal or professional life?",
     "answers": [
@@ -48,7 +48,12 @@
   "4": {
     "end": {
       "title": "Consider psychotherapy",
-      "text": "The focus is often on resolving difficulties arising from the past that hamper an individual's emotional functioning in the present, improving overall psychological functioning, and dealing with the present in more emotionally healthy ways.  You may find it helpful to know that ICF Members have received training to discern the differences between coaching and therapy and are obliged by our organization's Code of Ethics to refer prospective or current clients to therapists when appropriate."
+      "text": `The focus is often on resolving difficulties arising from the past that hamper an 
+      individual's emotional functioning in the present, improving overall psychological functioning,
+      and dealing with the present in more emotionally healthy ways.  You may find it helpful to know
+      that ICF Members have received training to discern the differences between coaching and therapy 
+      and are obliged by our organization's Code of Ethics to refer prospective or current clients to 
+      therapists when appropriate.`
     }
   },
 
@@ -102,18 +107,23 @@
   },
 
   "9": {
-    "end": "No further action needed."
+    "end": {
+      "title": "Looks like you're all set.",
+      "text": `Based on your answers, you don't need any help right now.
+      
+If you'd like to answer the questions again, "Start over" below.`
+    }
   },
 
   "10": {
     "question": "Do you want to design actions or solutions for yourself, or do you need someone else to create them for you?",
     "answers": [
       {
-        "text": "Design solutions for myself",
+        "text": "My design",
         "goto": "15"
       },
       {
-        "text": "Have solutions created for me",
+        "text": "Someone else's design",
         "goto": "11"
       }
     ]
@@ -192,7 +202,21 @@
   "17": {
     "end": {
       "title": "Consider coaching",
-      "text": "A coach could be beneficial for you! ICF defines coaching as partnering with clients in a thought-provoking and creative process that inspires them to maximize their personal and professional potential. Coaches honor the client as the expert in his or her life and work and believe every client is creative and resourceful. The coach's responsibility is to:\n\n * Discover, clarify and align with what the client wants to achieve.  * Encourage client self-discovery.  * Elicit client-generated solutions and strategies.  * Hold the client responsible and accountable.\n\n This process helps clients dramatically improve their outlook on work and life, while developing leadership skills and unlocking potential."
+      "text": `A coach could be beneficial for you! ICF defines coaching as partnering with clients in a 
+thought-provoking and creative process that inspires them to maximize their personal and professional 
+potential. Coaches honor the client as the expert in his or her life and work and believe every client 
+is creative and resourceful. The coach's responsibility is to:
+
+* Discover, clarify and align with what the client wants to achieve.  
+* Encourage client self-discovery.  
+* Elicit client-generated solutions and strategies.  
+* Hold the client responsible and accountable.
+
+This process helps clients dramatically improve their outlook on work and life, while developing 
+leadership skills and unlocking potential.`,
+      "actions": [
+        { "text": "Book a free session!", "goto": "https://aaronbieber.coach/get-started" }
+      ]
     }
   },
 
