@@ -8,8 +8,6 @@ import Button from './Button'
 const Board = (props) => {
   const step = AppStore.useState(s => s.step)
   const prev = AppStore.useState(s => s.prev)
-  console.log('on step ' + step)
-  console.log('prev ' + prev)
   let element, backButton
 
   if (step > 1) {
